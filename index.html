@@ -3,73 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Sriracha&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <title>Survey Form</title>
 </head>
 <body>
-    <header>
-        <h1 id="title">Wedding Form</h1>
-        <p id="description">Register your personal informations and discover if you will be mary me.</p>
-    </header>
-    <main>
-        <form id="survey-form" action="#">
-            <label id="name-label" for="name">Name</label>
-            <input id="name" name="name" type="text" placeholder="Enter your name" required>
-
-            <label id="email-label" for="email">Email</label>
-            <input id="email" name="email" type="email" placeholder="Enter your email" required>
-
-            <label id="number-label" for="number">Age</label>
-            <input id="number" name="number" type="number" placeholder="Enter your age" min="21" max="40" required>
-
-            <label for="dropdown">Have you ever been married?</label>
-            <select id="dropdown" name="dropdown">
-                <option value="" selected disabled>Select an option</option>
-                <option value="never">Never</option>
-                <option value="one-time">One Time</option>
-                <option value="more-than-two    ">Two or more times</option>
-            </select>
-
-            <div>
-                <p>Type of Wedding</p>            
-                <label>
-                    <input type="radio" value="monogamy" name="wedding-type">
-                    Monogamy
-                </label>         
-                <label>
-                    <input type="radio" value="polygamy" name="wedding-type">
-                    Polygamy
-                </label>
-                <label>
-                    <input type="radio" value="open-for-discussion" name="wedding-type">
-                    Open for discussion
-                </label>
-            </div>
-
-            <div>
-                <p>Check one or more options that describe your personality</p>
-                <input type="checkbox" id="party" value="party">
-                <label for="party">Party</label>
-                <input type="checkbox" id="drink-alcohol" value="drink-alcohol">
-                <label for="drink-alcohol">Drink Alcohol</label>
-                <input type="checkbox" id="church" value="church">
-                <label for="church">Go to church</label>
-                <input type="checkbox" id="listen-music" value="listen-music">
-                <label for="listen-music">Listen to music</label>
-                <input type="checkbox" id="watch-movies" value="watch-movies">
-                <label for="watch-movies">Watch movies</label>
-                <input type="checkbox" id="see-friends" value="see-friends">
-                <label for="see-friends">See friends</label>
-            </div>
-
-            <div>
-                <p>Can you write more about you?</p>
-                <textarea id="more-about" name="more-about" rows="10" cols="50" placeholder="Enter your details here..."></textarea>
-            </div>
-
-            <button type="submit" id="submit" >Send</button>
-        </form>
-    </main>
-    <footer></footer>
+    <div class="opacity-background">
+        <div class="container">
+    
+            <header>
+                <h1 id="title" class="title header-text">Wedding Form</h1>
+                <p id="description" class="description header-text">Register your personal informations and discover if you will be mary me.</p>
+            </header>
+            <main>       
+                <form id="survey-form" class="form column-align" action="#">
+                    <label id="name-label" for="name">Name</label>
+                    <input class="discursive-input" tabindex="1" id="name" name="name" type="text" placeholder="Enter your name" required>
+        
+                    <label id="email-label" for="email">Email</label>
+                    <input class="discursive-input" tabindex="2" id="email" name="email" type="email" placeholder="Enter your email" required>
+        
+                    <label id="number-label" for="number">Age</label>
+                    <input class="discursive-input" tabindex="3" id="number" name="number" type="number" placeholder="Enter your age" min="21" max="40" required>
+        
+                    <label for="dropdown">Have you ever been married?</label>
+                    <select class="discursive-input" tabindex="4" id="dropdown" name="dropdown">
+                        <option value="" selected disabled>Select an option</option>
+                        <option value="never">Never</option>
+                        <option value="one-time">One Time</option>
+                        <option value="more-than-two    ">Two or more times</option>
+                    </select>
+                    
+                    <div class="choose-type column-align"> 
+                        <p>Type of Wedding</p>            
+                        <label tabindex="5" >
+                            <input type="radio" value="monogamy" name="wedding-type">
+                            Monogamy
+                        </label>         
+                        <label tabindex="6" >
+                            <input type="radio" value="polygamy" name="wedding-type">
+                            Polygamy
+                        </label>
+                        <label tabindex="7" >
+                            <input type="radio" value="open-for-discussion" name="wedding-type">
+                            Open for discussion
+                        </label>
+                    </div>
+        
+                    <div class="choose-type column-align"
+                        <p>Check one or more options that describe your personality</p>
+                        
+                        <label tabindex="8" for="party">
+                            <input type="checkbox" id="party" value="party">
+                            Party
+                        </label>
+                        <label tabindex="9" for="drink-alcohol">
+                            <input type="checkbox" id="drink-alcohol" value="drink-alcohol">
+                            Drink Alcohol
+                        </label>
+                        
+                        <label tabindex="10" tabindex="7" for="church">
+                            <input type="checkbox" id="church" value="church">
+                            Go to church
+                        </label>
+                        
+                        <label tabindex="11" for="listen-music">
+                            <input type="checkbox" id="listen-music" value="listen-music">
+                            Listen to music
+                        </label>
+                        
+                        <label tabindex="12" for="watch-movies">
+                            <input type="checkbox" id="watch-movies" value="watch-movies">
+                            Watch movies
+                        </label>
+                        
+                        <label tabindex="13" for="see-friends">
+                            <input type="checkbox" id="see-friends" value="see-friends">
+                            See friends
+                        </label>
+                    </div>
+        
+                    <div>
+                        <p>Can you write more about you?</p>
+                        <textarea tabindex="14" id="more-about" name="more-about" rows="10" cols="50" placeholder="Enter your details here..."></textarea>
+                    </div>
+        
+                    <button tabindex="15" class="button-submit" type="submit" id="submit" >Send</button>
+                </form>
+            </main>
+            <footer></footer>
+        </div>
+    </div>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>

@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-attachment: fixed;
+    background-image: url('../img/background-survey-form.jpg');
+    background-repeat: round;
+    background-size: 100vw;  
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    height: 100%;  
+}
+
+.opacity-background {
+    background-color: rgba(255, 255, 255, 0.7);  
+    display: grid;
+    justify-items: center;
+}
+
+.title {
+    font-family: 'Sriracha', cursive;
+    font-size: 4em;
+    margin: 1em 0 0 0;
+}
+
+.description {
+    font-size: 1.3em;
+    margin: 0 0 2em 0;
+}
+
+.header-text {
+    text-align: center;
+}
+
+.form {
+    background: rgba(141, 141, 141, 0.8);
+    border-radius: 5px;
+    padding: 2em;
+}
+
+.column-align {
+    display: flex;
+    flex-direction: column;
+}
+
+.discursive-input {
+    border-radius: 5px;
+    border-style: none;
+    margin: 0.7em 0 1em 0;
+    padding: 0.7em;
+    width: 100%;
+}
+
+.choose-type {
+    line-height: 2em;
+    padding: 1em 0 1em 0;
+}
+
+input:focus,
+select:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+    padding: 0.7em;
+    resize: vertical;
+    width: 100%;
+}
+
+.button-submit {
+    background-color: #37af65;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1em;
+    margin: 2em 0;
+    padding: 1em;
+    width: 100%;
+}
+
+.button-submit:hover {
+    box-shadow: 0 0 0.3em 0.1em rgba(255, 255, 255, 0.4);
+}
+
+@media(max-width: 800px) {
+    .title {
+        font-size: 2em;
+        margin: 0.5em 0 0 0;
+    }
+
+    .description {
+        font-size: 1em;
+        margin: 0 0 1em 0;
+    }
+
+    .form {
+        background: rgba(141, 141, 141, 0.8);
+        border-radius: 2px;
+        padding: 1em;
+        width: 100vw;
+    }
+    .button-submit {
+        border-radius: 2px;
+    }
+}
